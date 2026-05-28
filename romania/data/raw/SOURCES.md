@@ -31,3 +31,18 @@ Each raw file is paired with an entry here documenting its provenance.
 - The Total row matches QX's "25/36/46% pyramid" (rounded).
 - The Rural row's liceu value (72.56%) is the headline finding — nearly 3 in 4 rural high-school students are functionally numerically illiterate.
 - "Urban mare" = cities with population >200,000; "Metropolitan" = surrounding metro areas; "Urban mic" = smaller towns; "Rural" = rural localities.
+
+## `eurostat_2024_ict_specialists_share.csv`
+
+**What:** Share of ICT specialists in total employment, EU-27 member states, 2024. Includes the EU-27 average as a separate row tagged `is_eu=EU_AVG`.
+
+**Source:** Eurostat (dataset `isoc_sks_itspt`), via the Statistics Explained accompanying file *ICT specialists in employment* (ICT05_2025.xlsx), Figure 1. Article: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=ICT_specialists_in_employment
+
+**Cross-check:** EU news release 2025-07-08 (https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250708-2) cites the same headline figures (Romania 2.8%, EU 5.0%, Sweden 8.6% top, Greece 2.5% bottom).
+
+**Vintage:** 2024 reference year, published July 2025.
+
+**Notes:**
+- ICT specialist = ISCO classification of workers whose main job is the development, operation or maintenance of ICT systems (broader than just developers).
+- Spain and France use slightly different definitions per the source metadata.
+- Non-EU countries (CH, NO, IS, RS, BA, TR) are excluded from this CSV — the EU-27 comparison is the analytically clean cut.
