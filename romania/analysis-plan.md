@@ -17,6 +17,9 @@ Romania's education system displays a stark paradox that any honest analysis mus
 **Central research question:**
 > *Why does the same national system simultaneously produce mass educational failure and globally competitive technical elites — and what does that two-track reality mean for policy?*
 
+**Sharpened thesis** (after pulling the IT-pipeline data — see `sources/it-pipeline-notes.md` §6):
+> Romania's education system is not "failing on average". It is producing two outputs at once: a small, internationally competitive technical elite (visible in IMO/IOI medal counts, in the IT sector's 6.67% direct GDP contribution, and in unicorns like UiPath and Bitdefender) and a large cohort of functionally illiterate dropouts (visible in PISA, in the 25→36→46% literacy pyramid, and in the 73% rural-liceu illiteracy rate). The two outputs do not mix. The elite track does not pull the mass track up; the mass track does not feed the elite track. The reforms in flight (QX, Laws 198/199 of 2023, PNRR) are attempts to broaden the base without disturbing the elite. Whether that's politically feasible — and whether the political class actually wants it — is the open question the brief should pose.
+
 **Sub-questions:**
 1. What are the **direct and structural drivers** of abandon școlar in Romania?
 2. Where in the pipeline (preșcolar → primar → gimnazial → liceal → universitar) does the system **lose the most students**, and who are they?
@@ -173,16 +176,22 @@ Organised from proximate to structural:
 - Other defining numbers: 27.5% rural vs 3.3% urban early leaving; 60% vs 90% upper-sec completion; 45% population rural but only 24% tertiary enrolment from rural areas and only 10% of nurseries.
 
 ### 5.4 The Other Track — How the Elite System Works
+> Background notes and source citations: `romania/sources/it-pipeline-notes.md`.
 - Profile of the top 20 *colegii naționale* by Bac and Olympiad results.
 - The role of **admission filtering** (Evaluare Națională cutoffs) in concentrating high-capital students.
 - The shadow education system: ***meditațiile*** (private tutoring). Estimated household spend, normalisation, and its role as a *de facto* parallel system that those who can pay use to compensate for the public system's weaknesses.
 - The Olympiad infrastructure: centres of excellence, summer camps, the role of specific teachers and informal mentor networks.
+- **The hard numbers** (IT pipeline notes §4): IMO all-time 45G/85S/65B, avg ranking 7.5, top-10 for 60+ years; Romania hosted the first IMO (1959); IMO 2022 1st in Europe / 5th worldwide. IOI all-time 38G/60S/37B since 1990, ranked #6 worldwide as of 2026 — zero honourable mentions, every Romanian finisher wins a medal.
 - Why informatics in particular: heritage of strong math tradition + low capital requirements + clear international benchmarks (IOI) + IT industry pull from the late 1990s onward.
 
 ### 5.5 From Top Liceu to Big Tech — The Pipeline Working
+> Background notes and source citations: `romania/sources/it-pipeline-notes.md`.
 - Funnel: top liceu → UPB/UTCN/UBB CS or *Automatică* → internship in multinational or startup → senior role / emigration.
 - Quantify (where possible): number of CS graduates/year; share entering IT; share emigrating within 5 years.
-- The role of multinational R&D centres opening in Romania from ~2005 (Microsoft, Oracle, IBM, Amazon, Continental, Bosch) and of homegrown successes (UiPath, Bitdefender, eMAG, FintechOS).
+- The role of multinational R&D centres opening in Romania from ~2005 (Microsoft 1,500+ engineers in Bucharest, Amazon, Google, Oracle, Dell, Adobe, Continental, Bosch) and of homegrown successes (UiPath ~$35B IPO in 2021, Bitdefender ~500M users, eMAG, FintechOS).
+- **Sector headline numbers** (ANIS 2024): €17.7B software/IT services turnover, €23.6B IT&C total, **6.67% direct GDP contribution**, 14.2% incl. induced effects, 195,929 IT employees. București concentrates ~63% of software-development revenues.
+- **The workforce paradox** (Eurostat 2024): ICT specialists are only **2.8% of total Romanian employment** — second-lowest in the EU, alongside Greece, against an EU average of 5.0% and Sweden's 8.6%. Romania has one of the EU's largest IT sectors *by GDP share* and one of its smallest *by workforce share*. The success story is narrow, not broad-based.
+- **2024-2025 stress signals** to flag in §5.8: layoffs, tax-incentive removal, up to -17.6% profitability hit projected for 2025. The pipeline is exposed to political-economy risk.
 - The dependency question: does the success story require a small, self-selected elite — meaning scaling it would change its nature?
 
 ### 5.6 Higher Education — Strengths, Sores, and Stagnation
