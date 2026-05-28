@@ -75,3 +75,24 @@ Each raw file is paired with an entry here documenting its provenance.
 - The Romania row reflects the *current Romanian team* — does not include Romania's 1959-1989 communist-era performance separately; those years are folded in.
 - Top per-capita performers in this list: Singapore, Bulgaria, Hungary, Romania, Israel — all small countries that punch far above their weight. Big countries naturally cannot lead per-capita.
 - Per-capita figure should not be quoted without context: it normalises against current population, not 65-year average population.
+
+## `pisa_romania_below_level2_trend.csv`
+
+**What:** Share of Romanian 15-year-olds scoring below PISA Level 2 ("low achievers") in mathematics, reading, and science across PISA cycles 2012, 2018, and 2022. Includes the OECD average for the same cycles as comparator. The `note` column documents derivation method per cell.
+
+**Sources:**
+- 2018 values: OECD (2019), *PISA 2018 Results — Country Note: Romania* (PDF, 10 pages). Local copy at `/tmp/pisa2018-rou.pdf` (not committed; refetch from OECD if needed). Derived from "at Level 2 or higher" headline figures by subtracting from 100.
+- 2022 values: OECD (2023), *PISA 2022 Results Country Note: Romania*. Same derivation method.
+- 2012 values: derived from the 2022 country note's statement that "Compared to 2012, the proportion of students scoring below a baseline level of proficiency (Level 2) increased by seven percentage points in mathematics; did not change significantly in reading; and increased by six percentage points in science." Applying these changes to the 2022 confirmed values yields the 2012 estimates.
+- OECD averages: same OECD country notes; OECD 2025 Romania review Figure 4.11.
+
+**Vintage:** PISA 2022 published December 2023; PISA 2018 published December 2019.
+
+**Important gaps:**
+- 2006, 2009, 2015 are missing because OECD legacy country-note PDFs were not retrievable via direct URL pattern matching. The OECD 2025 *Education and Skills in Romania* review states explicitly (p.126): "the share of students scoring below level 2 in all three subjects has remained consistently high since 2006". This is the authoritative qualitative statement covering the missing years.
+- 2025 cycle will publish results in 2026 (release scheduled December 2026 per OECD PISA timeline).
+
+**Notes for citation:**
+- The 2012 row is derived, not directly observed in our sources. Cite with "derived from PISA 2022 country note" rather than "PISA 2012 results".
+- All percentages rounded to integers per the source country notes.
+- The OECD acknowledged caveat: PISA coverage of the 15-year-old population in Romania rose from 72% in 2006 to 76% in 2022. Stable percentages across a broader cohort is a small implicit gain.
