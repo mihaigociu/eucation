@@ -46,3 +46,32 @@ Each raw file is paired with an entry here documenting its provenance.
 - ICT specialist = ISCO classification of workers whose main job is the development, operation or maintenance of ICT systems (broader than just developers).
 - Spain and France use slightly different definitions per the source metadata.
 - Non-EU countries (CH, NO, IS, RS, BA, TR) are excluded from this CSV — the EU-27 comparison is the analytically clean cut.
+
+## `eurostat_2023_early_leavers_urbanisation.csv`
+
+**What:** Share of 18-24 year olds who are early leavers from education and training (left school without completing upper secondary and not currently in education), broken down by degree of urbanisation, 2023. EU-27 member states with data + EU-27 average. Includes the rural-cities gap in percentage points.
+
+**Source:** Eurostat dataset `edat_lfse_30`, dimensions: `unit=PC, wstatus=POP, sex=T, age=Y18-24, deg_urb in (DEG1, DEG3)`. Downloaded via SDMX TSV from https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/edat_lfse_30/?format=TSV
+
+**Vintage:** 2023 reference year (most recent fully-reported cycle as of the OECD 2025 report).
+
+**Notes:**
+- `DEG1` = Cities; `DEG3` = Rural areas; `DEG2` (towns/suburbs) excluded from this CSV for clarity but available in the raw TSV.
+- Romania's gap (24.2 pp) is the largest in the EU by ~10 pp; Bulgaria is second at 14.6 pp.
+- Some countries (NL, IE, SI, BE, IT, DE, CZ, AT) have *negative* gaps — rural rates are lower than city rates. Mostly reflects urban concentration of disadvantaged migrant populations in those countries.
+- `wstatus=POP` (denominator = full population) is the headline early-leaver indicator. `EMP` and `NEMP` are alternative slices.
+- Romania's headline values (3.3% cities, 27.5% rural) exactly match the OECD 2025 *Education and Skills in Romania* report.
+
+## `imo_medals_population.csv`
+
+**What:** All-time cumulative IMO medal counts (gold, silver, bronze, total) for the top 23 countries (by gold-medal count) plus current population in millions, to compute per-capita medal rates.
+
+**Sources:**
+- Medal counts: Wikipedia, *List of countries by medal count at International Mathematical Olympiad* (https://en.wikipedia.org/wiki/List_of_countries_by_medal_count_at_International_Mathematical_Olympiad), accessed 2026-05. Wikipedia in turn sources from the official IMO results at https://www.imo-official.org. Defunct teams (USSR, East Germany, Czechoslovakia, Yugoslavia, CIS) are listed separately on Wikipedia; here only currently-competing successor states are included.
+- Population: approximate mid-2024 figures from public sources (UN Population Division order of magnitude). Used only as a normaliser — small variations have no effect on per-capita ranking among top performers.
+
+**Notes:**
+- IMO ran from 1959 onward (Romania hosted the first). 65 editions through 2024.
+- The Romania row reflects the *current Romanian team* — does not include Romania's 1959-1989 communist-era performance separately; those years are folded in.
+- Top per-capita performers in this list: Singapore, Bulgaria, Hungary, Romania, Israel — all small countries that punch far above their weight. Big countries naturally cannot lead per-capita.
+- Per-capita figure should not be quoted without context: it normalises against current population, not 65-year average population.

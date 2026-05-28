@@ -30,25 +30,43 @@ env_colors = {
 
 fig, ax = plt.subplots(figsize=(10, 6.5))
 
+cycle_x = list(range(len(cycles)))
+
+# Per-environment horizontal offset for data labels — keeps them off the
+# y-axis gridlines and off each other.
+label_offset = {
+    "Rural":             (8, 0),
+    "Urban mic":         (8, 0),
+    "Metropolitan":      (8, 0),
+    "Urban mare":        (8, 0),
+}
+
 for env in env_order:
     sub = df[df["environment"] == env].set_index("cycle").loc[cycles]
-    ax.plot(cycles, sub["illiteracy_pct"], marker="o", linewidth=2.4,
+    ax.plot(cycle_x, sub["illiteracy_pct"], marker="o", linewidth=2.4,
             markersize=9, color=env_colors[env], label=env)
-    for x, y in zip(cycles, sub["illiteracy_pct"]):
-        offset = 2.4 if env == "Rural" else (-3.6 if env == "Urban mare" else 2.0)
-        ax.annotate(f"{y:.0f}%", (x, y), xytext=(0, offset),
+    dx, dy = label_offset[env]
+    for x, y in zip(cycle_x, sub["illiteracy_pct"]):
+        ax.annotate(f"{y:.1f}%", (x, y), xytext=(dx, dy),
                     textcoords="offset points",
-                    ha="center", fontsize=9, color=env_colors[env],
-                    fontweight="bold")
+                    ha="left", va="center", fontsize=9,
+                    color=env_colors[env], fontweight="bold")
 
 national = df[df["environment"] == "Total"].set_index("cycle").loc[cycles]
-ax.plot(cycles, national["illiteracy_pct"], linestyle="--", linewidth=1.5,
+ax.plot(cycle_x, national["illiteracy_pct"], linestyle="--", linewidth=1.5,
         color="#7f8c8d", marker="s", markersize=6, label="National average",
         alpha=0.8)
-for x, y in zip(cycles, national["illiteracy_pct"]):
-    ax.annotate(f"{y:.0f}%", (x, y), xytext=(15, -3),
+# Place national-average labels below the line to avoid collision with the
+# Metropolitan line (which sits just below) and with x-axis-mid environments.
+for x, y in zip(cycle_x, national["illiteracy_pct"]):
+    ax.annotate(f"{y:.1f}%", (x, y), xytext=(8, -12),
                 textcoords="offset points",
-                ha="left", fontsize=9, color="#7f8c8d", style="italic")
+                ha="left", va="center", fontsize=9, color="#7f8c8d",
+                style="italic")
+
+ax.set_xticks(cycle_x)
+ax.set_xticklabels(cycles)
+ax.set_xlim(-0.25, len(cycles) - 0.35)
 
 fig.suptitle(
     "The Romanian school system worsens numeric literacy as students progress",
