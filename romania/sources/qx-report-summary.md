@@ -13,7 +13,7 @@
 | Title | *Raport de diagnostic al educației și cercetării din România. Realizări prezente și implicații pentru noi reforme în domeniu (Raportul QX)* |
 | Author | Prof. univ. dr. psih. **Daniel David** — Minister of Education and Research (Dec 2024 – May 2025), Rector of UBB Cluj, m.c. of the Romanian Academy, member of Academia Europaea |
 | Date | May 2025, București |
-| Sections | 1. Rezumat; 2. Introducere; 3. CDI (R&D&I); 4. Învățământ superior + LLL; 5. Învățământ preuniversitar; 6. Concluzii; 7. Referințe |
+| Sections | 1. Rezumat; 2. Introducere; 3. CDI (R&D&I); 4. Învățământ superior + LLL (Lifelong Learning, i.e. *învățarea pe tot parcursul vieții*); 5. Învățământ preuniversitar; 6. Concluzii; 7. Referințe |
 | Genre | Ministerial diagnosis + reform proposal. Mix of (a) evidence-based claims, (b) European/international best practices, (c) explicit "reflexive analysis" by the author. Designed to be ideology-neutral so successive governments can colour it left/centre/right. |
 | Name | "QX" = use **Q**uestions to confront the unknowns (**X**) of the future. |
 

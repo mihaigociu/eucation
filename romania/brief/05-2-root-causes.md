@@ -29,6 +29,17 @@ socio-economic status, Romania's rural-urban gap is no longer statistically
 significant. The school system is not creating the geography of failure; it
 is reproducing the geography of poverty.
 
+PISA's *academic resilience* metric tightens the point further. Of
+Romanian students in the bottom quarter of the country's SES distribution,
+only **6.6%** reach the top quarter of national math performance — vs an
+OECD average of ~10% and a chance baseline of 25%. Romania is
+second-lowest in the OECD/CEE PISA-participating group, ahead only of
+Slovakia at 6.1% (OECD 2025, Fig. 4.12). Both numerator and denominator
+are intra-country, so the result cannot be explained by Romania being a
+middle-income country. The school system, measured against its *own*
+distribution, transmits parental SES to academic outcomes more strongly
+than most OECD peers.
+
 The household-level drivers in evidence:
 
 - **Poverty.** Romania has the EU's highest child poverty rate (Eurostat,

@@ -258,6 +258,20 @@ The brief's broader argument depends on what the elite track's existence
    reliably produces merit *in them*, and reliably does not in everyone
    else.
 
+   The cleanest direct measurement of this is PISA's *academic
+   resilience* indicator — the share of students in the bottom quarter
+   of the country's socio-economic distribution who score in the top
+   quarter of the country's mathematics performance. Both quartiles are
+   computed within-country, so the measure is not contaminated by
+   national wealth differences. In Romania the resilient share is
+   **6.6%**, against an OECD average of roughly 10% and a chance-level
+   baseline of 25%. Romania is **second-lowest in the OECD/CEE
+   PISA-participating group, ahead only of Slovakia (6.1%)** (OECD 2025
+   review, Fig. 4.12). The implication is direct: even within Romania's
+   own distribution, the system fails to lift its disadvantaged
+   students into the top group. The elite track is built almost
+   exclusively from students who arrived in school already advantaged.
+
 ## Connecting to the rest of the brief
 
 §5.5 takes the elite track's output and follows it forward into
